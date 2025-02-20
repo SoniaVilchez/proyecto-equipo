@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de Empresas - La Guardia de Jaén</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-image: url("imagenfondo4.jpg");
+            height: 150px;
+            color: #ffffff;
+            padding: 10px 20px;
+            border-bottom: 1px solid #aaa;
+            background-size: cover;
+            background-position: center;
+        }
+        .logo {
+            height: 50px;
+        }
+        h1 {
+            margin: 0;
+            font-size: 45px;
+            flex-grow: 5;
+            text-align: center;
+            color: #ecc206;
+            text-shadow: 4px 4px 4px rgba(0,0,0,0.7);
+        }
+        form {
+            margin: 0;
+        }
+        fieldset {
+            border: 1px solid #000;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        .search-bar {
+            margin-top: 1rem;
+            display: flex;
+            justify-content: center;
+        }
+        .search-bar form {
+            display: flex;
+        }
+        .search-bar input[type="text"] {
+            padding: 7px;
+            border: none;
+            border-radius: 5px 0 0 5px;
+            width: 200px;
+        }
+        .search-bar button {
+            padding: 7px 10px;
+            border: none;
+            color: #fff;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+        }
+        main {
+            padding: 2rem;
+            max-width: 999px;
+            margin: 0 auto;
+        }
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+        .category-item {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .category-item:hover {
+            transform: translateY(-5px);
+        }
+        .category-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            transition: color 0.3s ease;
+        }
+        .category-item:hover .category-icon {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+   <header>
+    <img src="Escudo_de_La_Guardia_de_Jaén.svg.png" alt="Logo de mi empresa" width="50">
+    <h1> Guía de empresas - La Guardia de Jaén</h1>
+    <div class="search-bar">
+        <form action="buscar.html" method="get" onsubmit="return false;">
+            <input type="text" id="search" placeholder="Buscar por categorias..." onkeyup="searchCategories()">
+        </form>
+    </div>
+   </header> 
+   <main>
+    <div class="category-grid">
+        <a href="categorias/administracion.html" class="category-item">
+            <i class="fas fa-building category-icon"></i>
+            <h2>Administración</h2>
+        </a>
+        <a href="Categorias/agricultura.html" class="category-item">
+            <i class="fas fa-tractor category-icon"></i>
+            <h2>Agricultura</h2>
+        </a>
+        <a href="categorias/comercio.html" class="category-item">
+            <i class="fas fa-shopping-cart category-icon"></i>
+            <h2>Comercios</h2>
+        </a>
+        <a href="categorias/construccion.html" class="category-item">
+            <i class="fas fa-hammer category-icon"></i>
+            <h2>Construcción</h2>
+        </a>
+        <a href="categorias/educacion.html" class="category-item">
+            <i class="fas fa-graduation-cap category-icon"></i>
+            <h2>Educación</h2>
+        </a>
+        <a href="Categorias/energias.html" class="category-item">
+            <i class="fas fa-seedling category-icon"></i>
+            <h2>Energías</h2>
+        </a>
+        <a href="categorias/hosteleria.html" class="category-item">
+            <i class="fas fa-utensils category-icon"></i>
+            <h2>Hostelería</h2>
+        </a>
+        <a href="categorias/industria.html" class="category-item">
+            <i class="fas fa-industry category-icon"></i>
+            <h2>Industria</h2>
+        </a>
+        <a href="categorias/logistica.html" class="category-item">
+            <i class="fas fa-truck category-icon"></i>
+            <h2>Logística</h2>
+        </a>
+        <a href="categorias/ocio.html" class="category-item">
+            <i class="fas fa-hourglass-start category-icon"></i>
+            <h2>Ocio</h2>
+        </a>
+        <a href="Categorias/sanidad.html" class="category-item">
+            <i class="fas fa-heartbeat category-icon"></i>
+            <h2>Sanidad</h2>
+        </a>
+        <a href="categorias/servicios.html" class="category-item">
+            <i class="fa-solid fa-users category-icon"></i>
+            <h2>Servicios</h2>
+        </a>
+    </div>
+   </main>
+   <script src="js/java.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostelería</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /*Estilos similares a la página principal*/
+        .business-list{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+            gap:2rem;
+        }
+        .business-card{
+            background-color: #cee4f5;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 1.5rem;
+            transition: transform 0.3s ease;
+            margin-top: 10px;
+        }
+        .business-card:hover{
+            transform:translateY(-5px);
+        }
+        header{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+   <header>
+    <h1>HOSTELERÍA EN LA GUARDIA DE JAÉN</h1>
+    <div class="search-container">
+        <input type="text" id="search" placeholder="Buscar..." onkeyup="searchBusinesses()">
+        <button type="submit"><i class="fas fa-search"></i></button>
+    </div>
+   </header> 
+   <main>
+    <div class="business-list">
+        <a href="hosteleria/El_Zorro/El_Zorro.html"class="business-card">
+            <h2>El Zorro</h2>
+        </a>
+        <a href="hosteleria/La_muralla/La_muralla.html"class="business-card">
+            <h2>La Muralla</h2>
+        </a>
+        <a href="hosteleria/Mirador_el_reencuentro/Mirador_el_reencuentro.html"class="business-card">
+            <h2>Mirador el Reencuentro</h2>
+        </a>
+        <a href="hosteleria/Pacomer/Pacomer.html"class="business-card">
+            <h2>Pacomer</h2>
+        </a>
+        <a href="hosteleria/Restaurante_el_timon/Restaurante_el_timon.html"class="business-card">
+            <h2>Restaurante El Timón</h2>
+        </a>
+        <a href="hosteleria/Restaurante_km_42_sl/Restaurante_km_42_sl.html"class="business-card">
+            <h2>Restaurante km32</h2>
+        </a>
+        <a href="hosteleria/Restcargan_S.A/Rescargant.html"class="business-card">
+            <h2>Rescargant</h2>
+        </a>
+        <a href="hosteleria/Cafe bar Patillas/Patillas.html" class="business-card">
+            <h2>Café Bar Patillas</h2>
+        </a>
+        <a href="hosteleria/Café_Bar_El_Cuerpo/Cuerpo.html" class="business-card">
+            <h2>Café Bar El Cuerpo</h2>
+        </a>
+        <a href="hosteleria/Plaza_San_Pedro/San_Pedro.html" class="business-card">
+            <h2>Plaza San Pedro</h2>
+        </a>
+    </div>
+   </main>
+   <script src="../js/java.js"></script>
+</body>
+</html>

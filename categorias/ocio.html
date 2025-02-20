@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocio</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /*Estilos similares a la página principal*/
+        .business-list{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+            gap:2rem;
+        }
+        .business-card{
+            background-color: #cee4f5;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 1.5rem;
+            transition: transform 0.3s ease;
+            margin-top: 10px;
+        }
+        .business-card:hover{
+            transform:translateY(-5px);
+        }
+        header{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+   <header>
+    <h1>OCIO EN LA GUARDIA DE JAÉN</h1>
+    <div class="search-container">
+        <input type="text" id="search" placeholder="Buscar..." onkeyup="searchBusinesses()">
+        <button type="submit"><i class="fas fa-search"></i></button>
+    </div>
+   </header> 
+   <main>
+    <div class="business-list">
+        <a href="ocio/Centro_ecuestre_la_estribera/Centro_ecuestre_la_estribera.html"class="business-card">
+            <h2>Centro Ecuestre La Estribera</h2>
+        </a>
+        <a href="ocio/Leyenda_viva/Leyenda_Viva.html"class="business-card">
+            <h2>Leyenda Viva</h2>
+        </a>
+        <a href="ocio/Party_time/Party_time.html"class="business-card">
+            <h2>Party Time</h2>
+        </a>
+        <a href="ocio/Pub_mekedo/Pub_mekedo.html"class="business-card">
+            <h2>Pub Mekedo</h2>
+        </a>
+    </div>
+   </main>
+   <script src="../js/java.js"></script>
+</body>
+</html>

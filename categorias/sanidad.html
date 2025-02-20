@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanidad</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /*Estilos similares a la página principal*/
+        .business-list{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+            gap:2rem;
+        }
+        .business-card{
+            background-color: #cee4f5;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 1.5rem;
+            transition: transform 0.3s ease;
+            margin-top: 10px;
+        }
+        .business-card:hover{
+            transform:translateY(-5px);
+        }
+        header{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+   <header>
+    <h1>SANIDAD EN LA GUARDIA DE JAÉN</h1>
+    <div class="search-container">
+        <input type="text" id="search" placeholder="Buscar..." onkeyup="searchBusinesses()">
+        <button type="submit"><i class="fas fa-search"></i></button>
+    </div>
+   </header> 
+   <main>
+    <div class="business-list">
+        <a href="sanidad/Farmacia_Maria_Zafra_Gonzales/Farmacia_Maria_Zafra_Gonzales.html"class="business-card">
+            <h2>Farmacia María Zafra González</h2>
+        </a>
+        <a href="sanidad/Java_Veterinaria_Sociedad_Limitada/Java_Veterinaria_Sociedad_Limitada.html"class="business-card">
+            <h2>Java Veterinaria SL</h2>
+        </a>
+        <a href="sanidad/Centro_de_dia_virgen_de_la_capilla/Centro_de_dia_virgen_de_la_capilla.html"class="business-card">
+            <h2>Farmacia Maria Zafra Gonzales</h2>
+        </a>
+        <a href="sanidad/Residencia_de_mayores_fuente_de_la_pena_sca/Residencia_de_mayores_fuente_de_la_pena_sca.html"class="business-card">
+            <h2>Residencia de mayores Fuente de la Peña</h2>
+        </a>
+        <a href="sanidad/Centro_de_dia_virgen_de_la_capilla/Centro_de_dia_virgen_de_la_capilla.html"class="business-card">
+            <h2>Centro de día Virgen de la Capilla</h2>
+        </a>
+        <a href="sanidad/Fisioterapia/Fisioterapia.html"class="business-card">
+            <h2>Fisioterapia Noelia Martínez</h2>
+        </a>
+        <a href="sanidad/Vet_go_Francisco_Lietor/vet_go_francisco_lietor.html"class="business-card">
+            <h2>Vet Go</h2>
+        </a>
+    </div>
+   </main>
+   <script src="../js/java.js"></script>
+</body>
+</html>
