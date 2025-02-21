@@ -27,9 +27,236 @@
         header{
             text-align: center;
         }
+        /* Estilos del header */
+        .main-header {
+            background-color: #333;
+            padding: 15px;
+        }
+
+        /* Barra de navegación */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            font-size: 18px;
+            padding: 10px 20px;
+            transition: background 0.3s ease-in-out;
+        }
+
+        .nav-link:hover {
+            background-color: #444;
+            border-radius: 5px;
+        }
+
+        /* Estilos del submenú */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Estilo del botón de categorías */
+        .dropdown-btn {
+            background: none;
+            border: none;
+            color: rgb(0, 0, 0);
+            font-size: 18px;
+            cursor: pointer;
+            padding: 10px 20px;
+        }
+
+        /* Estilo del menú desplegable */
+        .dropdown-menu {
+            display: none; /* Inicialmente oculto */
+            position: absolute;
+            background-color: #444;
+            min-width: 200px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            z-index: 1000;
+        }
+
+        /* Estilo de los enlaces dentro del menú */
+        .dropdown-menu a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            transition: background 0.3s ease-in-out;
+        }
+
+        /* Hover en los enlaces del menú */
+        .dropdown-menu a:hover {
+            background-color: #555;
+        }
+
+        /* Mostrar el menú cuando se hace hover en el contenedor de la categoría */
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        /* Submenú dentro de una categoría */
+        .submenu {
+            display: none;
+            position: absolute;
+            left: 200px; /* Desplaza el submenú a la derecha */
+            top: 0;
+            background-color: #555;
+            min-width: 200px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        /* Mostrar el submenú cuando el mouse pasa sobre el item principal */
+        .dropdown-item:hover .submenu {
+            display: block;
+        }
     </style>
 </head>
 <body>
+    <!-- Header con el menú -->
+    <nav class="navbar">
+        <a href="../index.html" class="nav-link">Inicio</a>
+
+        <!-- Botón Categorías con submenú -->
+        <div class="dropdown">
+            <button class="nav-link dropdown-btn">Categorías</button>
+            <div class="dropdown-menu">
+                <div class="dropdown-item">
+                    <a href="categorias/administracion.html">Administración</a>
+                    <div class="submenu">
+                        <a href="categorias/administracion/Jimenez_romero_francisco_ jesus/Jimenez_romero_francisco_jesus.html">Francisco Jesús Jiménez Romero</a>
+                    </div>
+                </div>
+                <div class="dropdown-item">
+                    <a href="categorias/agricultura.html">Agricultura</a>
+                    <div class="submenu">
+                        <a href="categorias/agricultura/Comunidad_De_Regantes_Los_Llanos/Comunidad_De_Regantes_Los_Llanos.html">Comunidad de Regantes Los Llanos</a>
+                    </div>
+                </div>
+                <div class="dropdown-item">
+                    <a href="categorias/comercio.html">Comercio</a>
+                    <div class="submenu">
+                        <a href="categorias/comercio/Agroquimicos_mentesa_SL/Agroquimicos_mentesa.html">Agroquímicos Mentesa</a>
+                        <a href="categorias/comercio/Carniceria_Vadillos/carniceria_vadillos.html">Carnicería Vadillos</a>
+                        <a href="categorias/comercio/Confeccion_Textil_Hogar_Bruna/Confeccion_Textil_Hogar_Bruna.html">Confección Textil Hogar Bruna</a>
+                        <a href="categorias/comercio/Confecciones_Gertrudis/Confecciones_Gertrudis.html">Confecciones Gertrudis</a>
+                        <a href="categorias/comercio/Coviran/Coviran.html">Covirán</a>
+                        <a href="categorias/comercio/Estanco_Maria_Jesus/Estanco_Maria_Jesus.html">Estanco María Jesús</a>
+                        <a href="categorias/comercio/Farmacia_silvia_ruiz_diaz/Farmacia_silvia_ruiz.html">Farmacia Silvia Ruíz Díaz</a>
+                        <a href="categorias/comercio/Jm_aperitivos/Jm_aperitivos.html">JM Aperitivos</a>
+                        <a href="categorias/comercio/Kiosko_vista_alegre/Kiosco_vista_alegre.html">Kiosko Vista Alegre</a>
+                        <a href="categorias/comercio/La_tienda_de_entrecaminos/La_tienda_de_entrecaminos.html">La Tienda de Entrecaminos</a>
+                        <a href="categorias/comercio/Mikrojuli/mikrojuli.html">MikroJuli</a>
+                        <a href="categorias/comercio/Muelle_15/muelle_15.html">Muelle 15</a>
+                        <a href="categorias/comercio/Panaderia_gertrudis_dominguez_dominguez/Panaderia_gertrudis_dominguez_dominguez.html">Panadería Gertrudis Domínguez Domínguez</a>
+                        <a href="categorias/comercio/Pili_y_mili/Pili_y_mili.html">Pili y Mili</a>
+                        <a href="categorias/comercio/Rincon_del_porricas/Rincon_del_porricas.html">Rincón del Porricas</a>
+                        <a href="categorias/comercio/Sebastian_dominguez_dominguez/Sebastian_dominguez_dominguez.html">Sebastián Domínguez Domínguez</a>
+                        <a href="categorias/comercio/Supermercado_tomas_paula/Supermercado_tomas_paula.html">Supermercado Tomás y Paula</a>
+                        <a href="categorias/comercio/Todo_100_María_del_Carmen/Todo_100_maría_del_carmen.html">Todo 100 María del Carmén</a>
+                        <a href="categorias/comercio/Xauen_beauty_sl/Xauen_beauty_sl.html">Xauen Beauty S.L</a>
+                    </div>
+                </div>
+                    <div class="dropdown-item">
+                    <a href="categorias/construccion.html">Construcción</a>
+                    <div class="submenu">
+                        <a href="categorias/construccion/Construcciones_y_reformas_nini/Construcciones_y_reformas_nini.html">Construcciones y Reformas Nini</a>
+                        <a href="categorias/construccion/Excavaciones_y_movimientos_de_tierras_JMS/excavaciones_JMS.html">Excavaciones y movimientos de tierra JMS</a>
+                        <a href="categorias/construccion/Global_foreman/Global_foreman.html">Global Foreman</a>
+                    </div>
+                </div> 
+                    <div class="dropdown-item">
+                    <a href="categorias/educacion.html">Educación</a>
+                    <div class="submenu">
+                        <a href="categorias/educacion/Academia_victoria/Academia_victoria.html">Academia Victoria</a>
+                        <a href="categorias/educacion/Diego_Martinez_Logopeda/Diego_Martinez_Logopeda.html">Diego Martínez Logopeda</a>
+                        <a href="categorias/educacion/Logoss_formacion_continuada/LOGOSS_Formación_Continuada.html">Logoss</a>
+                    </div>
+                </div>
+                    <div class="dropdown-item">
+                    <a href="categorias/energias.html">Energías</a>
+                    <div class="submenu">
+                        <a href="categorias/energias/Hh_Solar/Hh_solar.html">HH Solar</a>
+                        <a href="categorias/energias/Luis_pelaez_s.l/Luis_Peláez_S.L.html">Luis Peláez</a>
+                    </div>
+                </div>
+                    <div class="dropdown-item">
+                    <a href="categorias/hosteleria.html">Hostelería</a>
+                    <div class="submenu">
+                        <a href="categorias/hosteleria/El_Zorro/El_Zorro.html">El Zorro</a>
+                        <a href="categorias/hosteleria/La_muralla/La_muralla.html">La Muralla</a>
+                        <a href="categorias/hosteleria/Mirador_el_reencuentro/Mirador_el_reencuentro.html">Mirador el Reencuentro</a>
+                        <a href="categorias/hosteleria/Pacomer/Pacomer.html">Pacomer</a>
+                        <a href="categorias/hosteleria/Restaurante_el_timon/Restaurante_el_timon.html">Restaurante El Timón</a>
+                        <a href="categorias/hosteleria/Restaurante_km_42_sl/Restaurante_km_42_sl.html">Restaurante KM42</a>
+                        <a href="categorias/hosteleria/Restcargan_S.A/Rescargant.html">Rescargant</a>
+                        <a href="categorias/hosteleria/Cafe bar Patillas/Patillas.html">Café Bar Patillas</a>
+                        <a href="categorias/hosteleria/Café_Bar_El_Cuerpo/Cuerpo.html">Café Bar El Cuerpo</a>
+                        <a href="categorias/hosteleria/Plaza_San_Pedro/San_Pedro.html">Plaza San Pedro</a>
+                    </div>
+                </div>
+                    <div class="dropdown-item">
+                    <a href="categorias/industria.html">Industria</a>
+                    <div class="submenu">
+                        <a href="categorias/industria/Patatas_fritas_santo_reino_slu/Patatas_fritas_Santo_Reino_S.L.html">Patatas Fritas Santo Reino</a>
+                        <a href="categorias/industria/Sca_san_sebastián/SCA_San_Sebastian.html">C.S.A San Sebastián</a>
+                        <a href="categorias/industria/Rotuara/Rotuara.html">Rotuara</a>
+                        <a href="categorias/industria/Remancer_jaen_sl/Remancer_jaen_sl.html">Remancer</a>
+                        <a href="categorias/industria/Aceites_la_fuente_sl/Aceites_la_fuente_sl.html">Aceites La Fuente</a>
+                    </div>
+                </div>
+                <div class="dropdown-item">
+                    <a href="categorias/logistica.html">Logística</a>
+                    <div class="submenu">
+                        <a href="categorias/logistica/Transportes_y_materiales_san_sebastian_sociedad_limitada/Transportes_y_materiales_san_sebastian_sociedad_limitada.html">Transportes San Sebastián</a>
+                        <a href="categorias/comercio/ropa.html">Federico Vílchez Romero</a>
+                    </div>
+                </div>
+                <div class="dropdown-item">
+                    <a href="categorias/ocio.html">Ocio</a>
+                    <div class="submenu">
+                        <a href="categorias/ocio/Centro_ecuestre_la_estribera/Centro_ecuestre_la_estribera.html">Centro Ecuestre La Estribera</a>
+                        <a href="categorias/ocio/Leyenda_viva/Leyenda_Viva.html">Leyenda Viva</a>
+                        <a href="categorias/ocio/Party_time/Party_time.html">Party Time</a>
+                        <a href="categorias/ocio/Pub_mekedo/Pub_mekedo.html">Pub Mekedo</a>
+                    </div>
+                </div>
+                <div class="dropdown-item">
+                    <a href="categorias/sanidad.html">Sanidad</a>
+                    <div class="submenu">
+                        <a href="categorias/sanidad/Farmacia_Maria_Zafra_Gonzales/Farmacia_Maria_Zafra_Gonzales.html">Farmacia María Zafra Conzález/a>
+                        <a href="categorias/sanidad/Java_Veterinaria_Sociedad_Limitada/Java_Veterinaria_Sociedad_Limitada.html">Java Veterinaria</a>
+                        <a href="categorias/sanidad/Residencia_de_mayores_fuente_de_la_pena_sca/Residencia_de_mayores_fuente_de_la_pena_sca.html">Residencia de mayores Fuente de la Peña</a>
+                        <a href="categorias/sanidad/Centro_de_dia_virgen_de_la_capilla/Centro_de_dia_virgen_de_la_capilla.html">Centro de día Virgen de la Capilla</a>
+                        <a href="categorias/sanidad/Fisioterapia/Fisioterapia.html">Fisioterapia Noelia Martínez</a>
+                        <a href="categorias/sanidad/Vet_go_Francisco_Lietor/vet_go_francisco_lietor.html">Vet Go</a>
+                    </div>
+                </div>
+                <div class="dropdown-item">
+                    <a href="categorias/servicios.html">Servicios</a>
+                    <div class="submenu">
+                        <a href="categorias/servicios/Iniciativas_Desarrollos_La_Yuca_Sl/Iniciativas_Desarrollos_La_Yuca_Sl.html">Iniciativas y Desarollos La Yuca</a>
+                        <a href="categorias/servicios/Compania_Europea_De_Espectaculos/Compania_Europea_De_Espectaculos.html">Compañía Europea de Espectáculos</a>
+                        <a href="categorias/servicios/Tapiceria_la_guardia/Tapiceria_la_guardia.html">Tapicería La Guardia de Jaén</a>
+                        <a href="categorias/servicios/Mercedess_seo/Mercedess_seo.html">Mercedess SEO</a>
+                        <a href="categorias/servicios/Clece_sa/Clece_sa.html">Clece S.A</a>
+                        <a href="categorias/servicios/Autoescuela_stop/Autoescuela_stop.html">Autoescuela Stop</a>
+                        <a href="categorias/servicios/Blue_moon/Blue_moon.html">Blue Moon</a>
+                        <a href="categorias/servicios/Francisco_Anguita_Nutricion/Francisco_Anguita_Nutricion.html">Francisco Anguita Nutrición</a>
+                        <a href="categorias/servicios/Hielo_fricus/Hielos_fricus.html">Hielo Fricus</a>
+                        <a href="categorias/servicios/Marian_Jurado_Manicurista_Profesional/Marian_Jurado_Manicurista_Profesional.html">Marian Jurado Manicurista</a>
+                        <a href="categorias/servicios/Peluqueria_koketas_unisex/Peluqueria_koketas_unisex.html">Peluquería Koketas Unisex</a>
+                </div>
+            </div>
+        </div>
+
+        <a href="contacto.html" class="nav-link">Contacto</a>
+    </nav>
    <header>
     <h1>LOGÍSTICA EN LA GUARDIA DE JAÉN</h1>
     <div class="search-container">
